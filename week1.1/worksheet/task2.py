@@ -12,7 +12,7 @@ print(f"Welcome to LeedsBank's savings calculator {name}!")
 monthlysaving = input("Please enter the amount of money you wish to save every month. This should be a whole number: ")
 
 while not monthlysaving.isdigit():
-    monthlysaving = input("Invalid Amount, try again. Should be an integer: ")
+    monthlysaving = input("Invalid amount, try again. Should be an integer: ")
 
 monthlysaving = int(monthlysaving)
 
