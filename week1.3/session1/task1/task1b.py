@@ -8,5 +8,5 @@ while fruit:
 
 
 # Why does this work?
-
+#because it pops until the list no longer has any items inside
 # What features of Python does it rely on?
