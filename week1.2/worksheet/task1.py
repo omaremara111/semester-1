@@ -6,7 +6,7 @@ mark = input("Please enter the mark out of 100 that you got: ")
 if not mark.isdecimal() or int(mark) > 100:
     sys.exit("Error: Grade must be an integer between 0 and 100")
 
-grade = int(grade)
+mark = int(mark)
 
 
 if mark<= 39:
