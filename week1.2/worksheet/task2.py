@@ -1,16 +1,11 @@
 # Worksheet 1.2: Task 2 Solution
 import sys
 from util import read_numbers
-def read_numbers():
-    line = input("Enter some float numbers, separated by spaces: ")
-    numbers = [float(item) for item in line.split()]
-    return numbers
+
 numbers = read_numbers()
-print("Your list is:",numbers)
 
 if not numbers:
-    print("Erorr: no numbers provided")
-    sys.exit(1)
+    sys.exit("Error: no numbers provided")
 
 #minimum:
 minimum = min(numbers)
