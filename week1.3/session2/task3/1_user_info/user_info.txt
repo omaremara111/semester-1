@@ -1,0 +1,3 @@
+Name: Omar
+Age: 18
+Favorite Colour: Brown
