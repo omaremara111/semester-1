@@ -9,7 +9,12 @@
 
 
 # function implementation
+"""
+Outputs the number of lower case and upper case letters in the string.
+ignores any integers
+prints in the format (uppers,lower)
 
+"""
 def mystery_func(string):
     upper = 0
     lower = 0
