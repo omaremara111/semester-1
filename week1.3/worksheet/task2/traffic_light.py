@@ -34,4 +34,6 @@ while systime < maxtime:
 
         elapsed = 0
 
-    print(f"Time {systime:03} State {state}")
+    print(f"Time {systime:03} State {state}"
+          
+
