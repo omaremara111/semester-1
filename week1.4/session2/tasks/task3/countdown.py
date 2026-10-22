@@ -13,10 +13,16 @@ def countdown(n):
     Returns:
         None, prints the countdown sequence from n to 0.
     """
-
+    n = int(input("Enter a positive integer: "))
     # Complete your code here
     # base case
+    if n == 0:
+        print(0)
+    else:
+        print(n)
+        countdown(n - 1)
 
+    return countdown()
     # recursive case
 
 
