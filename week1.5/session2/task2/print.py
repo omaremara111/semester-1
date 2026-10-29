@@ -2,3 +2,8 @@
 
 # Write code here to create and print a Point object,
 # then create and print a Circle object
+p = Point(3, 4)
+print(p)
+
+c = Circle(5, p)
+print(c)
