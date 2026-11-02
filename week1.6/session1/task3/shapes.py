@@ -37,5 +37,38 @@ class Shape:
         self.colour = colour
 
 
-# Implement your Circle class here
-# Make sure that it inherits properly from Shape!
+class Circle(Shape):
+    """
+    A circle with a radius, position and colour.
+    """
+
+    def __init__(self, radius, position, colour="red"):
+        super().__init__(position, colour)
+        self.set_radius(radius)
+
+    def set_radius(self, radius):
+        """
+        Sets the radius of this circle.
+        """
+        if not isinstance(radius, (int, float)):
+            raise TypeError("radius must be a number")
+
+        if radius <= 0:
+            raise ValueError("radius must be positive")
+
+        self.radius = radius
+
+    def area(self):
+        """
+        Returns the area of this circle.
+        """
+        return round(math.pi * self.radius ** 2, 3)
+
+    def perimeter(self):
+        """
+        Returns the perimeter of this circle.
+        """
+        return round(2 * math.pi * self.radius, 3)
+
+    def __str__(self):
+        return f"{self.colour} circle, radius {self.radius}, at {self.position}"
